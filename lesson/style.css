@@ -1,0 +1,361 @@
+@charset "UTF-8";
+
+*{
+		  padding: 0;
+		  margin:0;
+		  box-sizing:border-box;
+		}
+body{
+	background-color: #67af29;
+	font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+}
+section#top{
+	width: 100%;
+	overflow: hidden; 
+	padding-top: 80px;
+}
+section#top > div{
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+section#top > div > div.left_col{
+	width: 56.25%;
+	text-align: center;
+}
+section#top > div > div > img{
+	margin-bottom: 50px;
+}
+section#top > div > div > img:nth-of-type(3){
+	margin-bottom: 15px;
+}
+section#top > div > div.left_col > div{
+	display: flex;
+	width: 100%;
+	padding: 0 4%;
+}
+section#top > div > div.left_col > div > a{
+	width: 46%;
+}
+
+section#top > div > div.left_col > div > a:nth-of-type(1){
+	margin-right: 4%;
+}
+
+
+section#top > div > div.left_col > div > a > img{
+	width: 100%;
+}
+
+section#top > div > div.right_col{
+	position: absolute;
+	top: -15px;
+	left: 56.25%;
+	width: 92.7%;
+}
+
+section#top > div > div.right_col > img{
+	max-width: 100%;
+}
+
+section#movie{
+	margin-top:80px;
+}
+
+section#movie > img{
+	display: block; 
+	margin: 0 auto;
+}
+
+section#movie > iframe{
+	width: 940px;
+	height: 540px; 
+	display: block;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+section#point{
+	margin-top: 115px;
+}
+
+section#point > div{
+	width: 960px;
+	margin: 0 auto;
+}
+
+section#point > div > img{
+	display: block;
+	margin: 0 auto;
+}
+
+section#point > div > div{
+	position: relative;
+	width: 100%;
+	background-color: white;
+	padding: 40px 10.4%;
+	margin-top: 80px;
+}
+
+section#point > div > div > img{
+	position: absolute;
+    top: -65px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: -1;
+}
+
+section#point > div > div > div > img{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+section#point > div > div > div > p{
+	font-size: 17px;
+	line-height: 1.5;
+	letter-spacing: 0.06em;
+	margin-bottom: 30px;
+}
+
+
+section#point > div > div > div > img:nth-of-type(2){
+	width: 503px;
+    margin: 0 auto;
+}
+
+section#point .icons{
+	display: flex;
+	margin-left: -7px;
+	margin-right: -7px;
+	width: calc(100% + 14px);
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+section#point .icons p{
+	font-size: 13px;
+	text-align: center;
+	font-weight: bold;
+	color: #007130;
+}
+
+section#point .search{
+	display: flex;
+	background-color: #d9ebca;
+	padding: 40px;
+	line-height: 1.6;
+    letter-spacing: 0.02em;
+
+}
+
+section#point .left1{
+	display: block;
+	float: left;
+    width: 50%;
+}
+
+section#point .right1{
+	display: block;
+	float: left;
+    width: 50%;
+}
+
+
+
+section#point .search > div > h4{
+    color: #007130;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+section#point .search > div > p{
+	font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+section#point .search > div > img{
+	width: 100%;
+}
+
+section#point .stock{
+	display: flex;
+	margin-top: 35px;
+	padding: 40px;
+	background-color: #d9ebca;
+
+}
+
+section#point .stock > div > h4{
+    color: #007130;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+section#point .stock > div > p{
+	font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+section#point .stock > div > img{
+	width: 100%;
+}
+
+section#point .store{
+	display: flex;
+	margin-top: 35px;
+	padding: 40px;
+	background-color: #d9ebca;
+}
+
+section#point .store > div > h4{
+    color: #007130;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+section#point .store > div > p{
+	font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+section#point .store > div > img{
+	width: 100%;
+}
+
+section#point .yaji{
+	display: flex;
+	margin: 30px auto;
+	justify-content: center;
+}
+
+section#point .check{
+	padding: 25px 15px 10px;
+    text-align: center;
+    border: 2px solid #067132;
+}
+
+section#point .check > img{
+	margin: 0 auto 20px;
+}
+
+section#point .check > ul{
+	text-align: left;
+    padding-left: 50px;
+}
+
+section#point .check > ul > li > p{
+	display: inline-block;
+	font-size: 20px;
+    font-weight: bold;
+    vertical-align: baseline;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+section#point .check > ul > li{
+	list-style: none;
+}
+
+section#point .check > ul > li > p{
+	position: relative;
+	padding-left: 40px;
+	margin: 20px;
+}
+
+section#point .check > ul > li > p::before{
+	content: "";
+	width: 30px;
+	height: 30px;
+	border: 2px solid #000;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: #fff;
+}
+
+section#point .check > ul > li > p::after{
+	content: "";
+	width: 5px;
+	height: 23px;
+	border-bottom: 3px solid red;
+	border-right: 3px solid red;
+	/*border: 2px solid #000;*/
+	position: absolute;
+	left: 14px;
+	top: 50%;
+	transform: translateY(-50%) rotate(45deg);
+}
+
+section#card > div{
+	display: block;
+	background-color: #d9ebca;
+	width: 960px;
+	margin: 0 auto;
+	margin-top: 85px;
+	padding: 40px 10.4% 40px;
+}
+
+section#card > div > img{
+	display: block;
+	margin: 0 auto;
+}
+
+section#card .web{
+	display: block;
+	background-color: #ffffff;
+	padding: 40px;		
+
+}
+
+section#card > div > div > div{
+	margin-bottom: 30px;
+}
+
+section#card > div > div > div h4{
+	color: #007130;	
+	font-size: 24px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+section#card .card2{
+	display: flex;
+}
+
+section#card .card2{
+	display: flex;
+	margin-top: 35px;
+	padding: 40px;
+	background-color: #ffffff;
+}
+
+section#card .left2{
+	display: block;
+	float: left;
+    width: 50%;
+}
+
+section#card .right2 > img{
+	width: 100%;
+}
+
+section#card .right2{
+	display: block;
+	float: left;
+    width: 50%;
+}
+
+
+
+
+
+
+

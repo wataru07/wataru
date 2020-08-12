@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+</head>
+<body>
+　abcd
+	<style type="text/css">
+		*{
+		  padding: 0;
+		  margin:0;
+		  box-sizing:border-box;
+		}
+		.box{
+			width:100px;
+			height: 100px;
+		}
+		.one{
+			background-color: blue;
+			transition:  all .3s cubic-bezier(0.26,-0.24, 0.61, 1.43); 
+		}
+		.one:active
+	{
+			width: 300px;
+		}
+
+		.two{
+			background-color: green;
+			animation: anime 2s ease 0s alternate infinite;
+		}
+
+
+		@keyframes anime{
+			0%{
+				width: 100px;
+			}
+			40%{
+				width: 400px;
+				background-color: yellow;
+			}
+			60%{
+				height: 400px;
+				background-color: pink;
+			}
+			
+			100%{
+				width: 400px
+				background-color: red;
+			}
+		}
+		
+	</style>
+	<div class="box one"></div>
+	<div class="box two"></div>
+</body>
+	
+</html>
