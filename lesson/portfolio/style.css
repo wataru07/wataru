@@ -1,8 +1,8 @@
-@charset"utf8";
+@charset "utf-8";
 
 *{
-	 padding: 0;
-	 margin:0;
+	padding: 0;
+	margin:0;
 	box-sizing:border-box;
 }
 
@@ -11,107 +11,127 @@ body{
 	font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
 }
 
+a{
+	text-decoration: none;
+}
+
+
 body > div{
 	font-size: 50px;
 }
 
-body > div > div > ul{
+nav > ul{
 	list-style-type: disc;
 	position: relative;
 }
 
-body > div > div > ul > li{
+nav > ul > li{
 	margin: 5px;
 	font-size: 5px;
 
 }
 
-body > div > div > ul > li > a{
+nav > ul > li > a{
+	color: #000;
 	font-size: 20px;
+	padding: 3px 10px;
 	margin:20px; 
 	position: relative;
 	-webkit-transition: all .3s ease;
     transition: all .3s ease;
 }
 
-body > div > div > ul > li > a:link{
-	text-decoration: none;
-}
+/*擬似要素:checkd,disable,required,forcusはフォーム内でよく使用される*/
+/*hover,activeはボタンで使用される*/
 
-
-
-
-body > div > div > ul > li > a::before{
+nav > ul > li > a::before{
 	position: absolute;
-    content: '';
-    width: 0;
-    height: 1px;
-    background-color: #009688;
-    transition: all .3s ease;
 	top: 0;
     left: 0;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-}
-
-body > div > div > ul > li > a::after{
-	position: absolute;
     content: '';
     width: 0;
-    height: 1px;
+    height: 2px;
     background-color: #009688;
-    transition: all .3s ease;
-	bottom: 0;
-    right: 0;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
 }
 
-
-
-
-
-
-body > div > div#about{
-	text-align: center;
+nav > ul > li > a::after{
+	position: absolute;
+	bottom: 0;
+    right: 0;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #009688;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
 }
 
-body > div > div#works{
-	text-align: center;
-}
-
-body > div > div#contact{
-	text-align: center;
-}
-
-section#form > div{
+nav > ul > li > a:hover::before, nav > ul > li > a:hover::after{
 	width: 100%;
-	font-size:15px;
 }
 
 
-section#form > div > div.top{
+
+
+section#about > div > h2{
+	text-align: center;
+	font-size: 60px;
+}
+
+section#works > div > h2{
+	text-align: center;
+	font-size: 60px;
+}
+
+section#contact > div > h2{
+	text-align: center;
+	font-size: 60px;
+}
+
+
+form#form > h4 > p{
+	text-align: center;
+	font-size:30px;
+}
+
+
+div#all > div.top{
 	display: flex;
-	justify-content: space-between;
-	width: 700px;
+	justify-content: center;
 	margin:0 auto;
 	padding: 10px;
 }
 
-section#form > div > div.top > input{
-	width: 265px;
+div#all > div.top > label{
+	margin: 10px;
+	font-size: 30px;
+}
+
+div#all > div.top > input{
+	margin: 20px;
+	padding: 2px;
 }
 
 
-section#form > div > div.under > label{
+div#all > div.under{
+	display: flex;
+	justify-content: center;
 }
 
+div#all > div.under > label{
+	margin: 10px;
+	padding-top:35px;
+	font-size: 30px;
+}
 
-section#form > div > div.under > input{
-	width: 65%;
+div#all > div.under > input{
+	margin: 20px;
+	padding: 2px;
 	height: 100px;
+	width:70%;
 }
-
 
 
 
