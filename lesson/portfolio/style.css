@@ -51,7 +51,7 @@ nav > ul > li > a::before{
     content: '';
     width: 0;
     height: 2px;
-    background-color: #009688;
+    background-color: #009689fa;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
 }
@@ -72,17 +72,54 @@ nav > ul > li > a:hover::before, nav > ul > li > a:hover::after{
 	width: 100%;
 }
 
+section#works{
+	transition: all .9s ease;
+    opacity: 0;
+    transform: translateX(-500px);
+}
 
+section#works.active{
+	opacity: 1;
+    transform: translateX(0px);
 
+}
+
+section#contact{
+	transition: all .9s ease;
+    opacity: 0;
+    transform: translateX(-500px);
+}
+
+section#contact.active{
+	opacity: 1;
+    transform: translateX(0px);
+
+}
 
 section#about > div > h2{
 	text-align: center;
 	font-size: 60px;
 }
 
+section#about > div > div{
+	height: 300px;
+}
+
+section#about > div > div > p{
+	text-align: center;
+}
+
 section#works > div > h2{
 	text-align: center;
 	font-size: 60px;
+}
+
+section#works > div > div{
+	height: 300px;
+}
+
+section#works > div > div > p{
+	text-align: center;
 }
 
 section#contact > div > h2{
@@ -95,7 +132,6 @@ form#form > h4 > p{
 	text-align: center;
 	font-size:30px;
 }
-
 
 div#all > div.top{
 	display: flex;
@@ -113,6 +149,23 @@ div#all > div.top > input{
 	margin: 20px;
 	padding: 2px;
 }
+
+div#all > div.subtop{
+	display: flex;
+	justify-content: center;
+}
+
+
+div#all > div.subtop > p{
+	color: red;
+	font-size: 15px;
+	margin: -25px 15px 10px 15px;
+}
+
+div#all > div.subtop > div{
+	width: 100px;
+}
+
 
 
 div#all > div.under{
