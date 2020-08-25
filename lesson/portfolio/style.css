@@ -51,7 +51,7 @@ nav > ul > li > a::before{
     content: '';
     width: 0;
     height: 2px;
-    background-color: #009689fa;
+    background-color: #02e8aa;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
 }
@@ -63,7 +63,7 @@ nav > ul > li > a::after{
     content: '';
     width: 0;
     height: 2px;
-    background-color: #009688;
+    background-color: #02e8aa;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
 }
@@ -73,6 +73,7 @@ nav > ul > li > a:hover::before, nav > ul > li > a:hover::after{
 }
 
 section#works{
+	color: #02e8aa;
 	transition: all .9s ease;
     opacity: 0;
     transform: translateX(-500px);
@@ -85,6 +86,7 @@ section#works.active{
 }
 
 section#contact{
+	color: #02e8aa;
 	transition: all .9s ease;
     opacity: 0;
     transform: translateX(-500px);
@@ -93,7 +95,14 @@ section#contact{
 section#contact.active{
 	opacity: 1;
     transform: translateX(0px);
+}
 
+section#contact > div:nth-of-type(2){
+	height: 70px;
+}
+
+section#about{
+	color: #02e8aa;
 }
 
 section#about > div > h2{
@@ -103,6 +112,7 @@ section#about > div > h2{
 
 section#about > div > div{
 	height: 300px;
+	font-size: 40px;
 }
 
 section#about > div > div > p{
@@ -112,10 +122,12 @@ section#about > div > div > p{
 section#works > div > h2{
 	text-align: center;
 	font-size: 60px;
+	color: #02e8aa;
 }
 
 section#works > div > div{
 	height: 300px;
+	font-size: 40px;
 }
 
 section#works > div > div > p{
@@ -127,8 +139,12 @@ section#contact > div > h2{
 	font-size: 60px;
 }
 
+form#form > h2{
+	text-align: center;
+}
 
-form#form > h4 > p{
+
+form#form > h2 > p{
 	text-align: center;
 	font-size:30px;
 }
@@ -156,7 +172,7 @@ div#all > div.subtop{
 }
 
 
-div#all > div.subtop > p{
+div#all > div.top > div > p{
 	color: red;
 	font-size: 15px;
 	margin: -25px 15px 10px 15px;
@@ -185,6 +201,36 @@ div#all > div.under > input{
 	height: 100px;
 	width:70%;
 }
+
+div.top > div > label{
+	margin: 15px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+div.top > div > div > input{
+	margin: 15px;
+	width: 300px;
+}
+
+div.top > div > div > p{
+	margin: 15px;
+}
+
+div.under > label{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+div.under > textarea{
+	width: 900px;
+}
+
+
+
+
+
+
 
 
 

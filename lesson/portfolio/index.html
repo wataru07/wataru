@@ -39,26 +39,33 @@
 		<section id="contact">
 			<div>
 				<h2>Contact</h2>
-					<form id="form" method="post" action="#" autocomplete="off">
-						<h4><p>お気軽にご連絡ください</p></h4>
-							<div id="all">
-								<div class="top">
-									<label>name</label>
-									<input type="text" name="Name">
-									<label>Email</label>
-									<input type="text" name="Email">
-								</div>
-								<div class="subtop">
-										<p>氏名を入れてください</p>
-										<p>入力が正しくありません</p>
-								</div>
-								<div class="under">
-									<label>Message</label>
-									<input type="text" name="Message">
+				<form id="form" method="post" action="#" autocomplete="off">
+					<h2>お気軽にご連絡ください</h2>
+					<div id="all">
+						<div class="top">
+							<div>
+								<label for="name">Name</label>
+								<div>
+									<input id="name" type="text" name="name">
+									<p>氏名を入力してください</p>
 								</div>
 							</div>
-					</form>
+							<div>
+								<label for="email">Email</label>
+								<div>
+									<input id="email" type="text" name="email">
+									<p>メールアドレスを入力してください</p>
+								</div>
+							</div>
+						</div>
+						<div class="under">
+							<label for="message">Message</label>
+							<textarea id="message" name="message"></textarea>
+						</div>
+					</div>
+				</form>
 			</div>
+			<div></div>
 		</section>
 	</main>
 </body>
