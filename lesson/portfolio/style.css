@@ -105,20 +105,37 @@ section#about{
 	color: #02e8aa;
 }
 
-section#about > div > h2{
-	text-align: center;
-	font-size: 60px;
-}
-
-section#about > div > div{
-	height: 300px;
+section#about > div{
+	display: flex;
+	justify-content: space-between;
 	font-size: 40px;
+	width: 800px;
 }
 
-section#about > div > div > p{
+
+section#about > h2{
+	text-align: left;
+	font-size: 60px;
+	width: 800px;
+	margin-left: 150px;
+}
+
+section#about > div > div.left{
+	margin-left: 150px;
+	height: 300px;
+	width: 40%;
+}
+
+section#about > div > div.right{
+	height: 300px;
+	width: 60%;
+	text-align: left;
+}
+
+/*section#about > div > div > p{
 	text-align: center;
 }
-
+*/
 section#works > div > h2{
 	text-align: center;
 	font-size: 60px;
