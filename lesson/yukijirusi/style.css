@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+*{
+		  padding: 0;
+		  margin:0;
+		  box-sizing:border-box;
+		}
+body{
+	font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+	width: 100%;
+}
+
+section#top{
+	display:flex;
+	width: 100%;
+	height: 500px;
+	position: relative;
+}
+
+section#top > div.left > img{
+	width: 100%;
+	height: 100%;
+	left: 50%;
+}
+
+section#top > div.right > img{
+	width: 100%;
+	right: 50%;
+	height: 100%;
+}
+
+section#top > div.mid{
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+}
+
+
+section#top > div.mid > div.l > img{
+	position: absolute;
+    top: 0;
+    left: 0;
+    margin: 98px 0 0 47px;
+    width: 268px;
+}
+
+section#top > div.mid > div.r > img{
+	position: absolute;
+    top: 0;
+    right: 0;
+    margin: 98px 0 0 47px;
+    width: 268px;
+}
+
+section#top > div.mid > div.c > img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 10%);
+}
+
+section#mo{
+	background-color: #f9be00;
+}
+
+
+
+section#mo > div > img{
+	display: block;
+	margin: 0 auto;
+}
+
+section#t{
+	width: 100%;
+}
+
+
+section#t > div{
+	display: flex;
+	background-image: url(./yimg/bg_main_p_pc.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+section#t > div > div{
+
+}
+
+
+
+section#t > div > div.p{
+	width: 600px;
+	position: relative;
+	background-color: #3a0100;
+}
+
+section#t > div > div > img:nth-of-type(1){
+	position: absolute;
+    left: 0;
+    top: 0;
+
+
+}
+
+section#t > div > div > img:nth-of-type(2){
+	position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+section#t > div > div > div.to{
+	display: flex;
+	width: 70%;
+	right: 0;
+}
+
+section#t > div > div > div.to > img{
+	margin-top:50px;
+	height: 200px;
+}
+
+section#t > div > div > div.to > div{
+	width:calc(100% - 600px);
+	margin-top:50px;
+
+}
+
+section#t > div > div > div.bo{
+	background-color: #fffcd9;
+	width:calc(100% - 600px);
+	margin-top:50px;
+
+}
+
+section#t > div > div > div.bo > ul{
+	width: 100%;
+}
+
+section#t > div > div > div.bo > ul > li{
+	width: 100%;
+}
+
+section#t > div > div > div.bo > ul > li > img{
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+}
