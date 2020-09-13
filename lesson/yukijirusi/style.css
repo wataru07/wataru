@@ -8,6 +8,7 @@
 body{
 	font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
 	width: 100%;
+
 }
 
 section#top{
@@ -41,17 +42,19 @@ section#top > div.mid{
 section#top > div.mid > div.l > img{
 	position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
     margin: 98px 0 0 47px;
     width: 268px;
+    transform: translateX(-500px);
 }
 
 section#top > div.mid > div.r > img{
 	position: absolute;
     top: 0;
-    right: 0;
+    right: 50%;
     margin: 98px 0 0 47px;
     width: 268px;
+    transform: translateX(500px);
 }
 
 section#top > div.mid > div.c > img{
@@ -74,32 +77,46 @@ section#mo > div > img{
 
 section#t{
 	width: 100%;
+
 }
 
 
 section#t > div{
 	display: flex;
-	background-image: url(./yimg/bg_main_p_pc.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-
-section#t > div > div{
 
 }
+
 
 
 
 section#t > div > div.p{
-	width: 600px;
+	width: calc(100% * 429 / 1600);
 	position: relative;
 	background-color: #3a0100;
+
 }
+
+section#t > div > div.rightd{
+	width:calc(100% * (1600 - 429) / 1600);
+	overflow: hidden;
+	position: relative;
+	background-color: #fffcd9;
+}
+
+section#t > div > div.rightd2{
+	width:calc(100% * (1600 - 429) / 1600);
+	overflow: hidden;
+	position: relative;
+	background-color: #fffcd9;
+
+}
+
+
+
 
 section#t > div > div > img:nth-of-type(1){
 	position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
 
 
@@ -113,48 +130,154 @@ section#t > div > div > img:nth-of-type(2){
 }
 
 section#t > div > div > div.to{
-	display: flex;
-	width: 70%;
-	right: 0;
+	width: 100%;
+	background-image: url(./yimg/bg_main_p_pc.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 5%;
 }
 
-section#t > div > div > div.to > img{
-	margin-top:50px;
-	height: 200px;
-}
 
 section#t > div > div > div.to > div{
-	width:calc(100% - 600px);
-	margin-top:50px;
-
+/*	width:calc(100% - 600px);*/
+	display: flex;
+	width: 70%;
+	margin-left: 0;
+	margin-right: auto;
 }
+
+section#t > div > div > div.to > div > img{
+	width: 45%;
+}
+
+section#t > div > div > div.to > div > div{
+	width: 55%;
+	padding: 40px 5px;
+	position: relative;
+}
+
+section#t > div > div > div.to > div > div > img.news{
+	position: absolute;
+	top: 5px;
+	right: 0px;
+	transform:translate(50% -50%);
+	width: 70px;
+}
+
+section#t > div > div > div.to > div > div > img:nth-of-type(2){
+	margin-top:18px;
+}
+
+section#t > div > div > div.to > div > div > img:nth-of-type(3){
+	margin-top:10px;
+}
+
+section#t > div > div > div.to > div > div > img:nth-of-type(4){
+	margin-top:25px;
+}
+
+
+
 
 section#t > div > div > div.bo{
-	background-color: #fffcd9;
-	width:calc(100% - 600px);
-	margin-top:50px;
-
+/*	position:relative;
+*/	background-color: #fffcd9;
+	width: 60%;
+	padding: 80px;
+	position: relative;
 }
 
-section#t > div > div > div.bo > ul{
+section#t > div > div > div.bo > user-select: {
 	width: 100%;
 }
 
 section#t > div > div > div.bo > ul > li{
+	list-style-type: none;
 	width: 100%;
 }
 
 section#t > div > div > div.bo > ul > li > img{
+	width: 70%;
+}
+
+section#t > div > div > div.spn{
+/*	position:relative;
+*/
+}
+
+section#t > div > div > div.spn > img{
+	display: block;
+	/*	position:absolute;*/
+	height: 700px;
+	position: absolute;
+	top: 100px;
+	transform: translate(450px , -100px);
+
+}
+
+section#t > div > div > div.ue > div{
+/*	width:calc(100% - 600px);*/
+	display: flex;
+	width: 70%;
+	margin-left: 0;
+	margin-right: auto;
+}
+
+
+section#t > div > div > div.ue > div > img{
+	width: 45%;
+}
+
+section#t > div > div > div.ue > div > div{
+	width: 55%;
+	padding: 40px 5px;
+	position: relative;
+}
+
+section#t > div > div > div.ue > div > div > img:nth-of-type(2){
+	margin-top:18px;
+}
+
+section#t > div > div > div.ue > div > div > img:nth-of-type(3){
+	margin-top:10px;
+}
+
+section#t > div > div > div.ue > div > div > img:nth-of-type(4){
+	margin-top:25px;
+}
+
+section#t > div > div > div.ue{
+	width: 100%;
+	background-image: url(./yimg/bg_main_r_pc.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 5%;
+}
+
+section#t > div > div > div.si{
+/*	position:relative;*/
+	background-color: #fffcd9;
+	width: 60%;
+	padding: 80px;
+	position: relative;
+}
+
+section#t > div > div > div.si > user-select: {
 	width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
+section#t > div > div > div.si > ul > li{
+	list-style-type: none;
+	width: 100%;
 }
+
+section#t > div > div > div.si > ul > li > img{
+	width: 70%;
+}
+
+
+
+
+
