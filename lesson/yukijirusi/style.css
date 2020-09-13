@@ -65,10 +65,17 @@ section#top > div.mid > div.c > img{
 }
 
 section#mo{
+	display: flex;
+	justify-content: center;
 	background-color: #f9be00;
+	padding: 35px;
 }
 
-
+section#mo > img{
+	height:60px; 
+	margin-left: 20px;
+	margin-right: 20px;
+}
 
 section#mo > div > img{
 	display: block;
