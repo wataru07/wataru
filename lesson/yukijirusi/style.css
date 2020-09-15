@@ -100,18 +100,17 @@ section#top > div.mid > div.c > div.c2{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, 10%);
-	animation: anime 4s ease 0s infinite;
+	transform: translate(-50%,10%) rotateY(180deg);
+	animation: anime 10s ease 0s infinite;
 }
 
 section#top > div.mid > div.c > div.c3{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, 10%);
-	animation: animei 4s ease 0s infinite;
+	transform: translate(-50%,10%) rotateY(0deg);
+	animation: animei 10s ease 0s infinite;
 	opacity: 0;
-	z-index: -1;
 }
 
 
@@ -120,29 +119,58 @@ section#top > div.mid > div.c > div.c3{
 
 @keyframes anime{
 	0%{
-		transform:translate(-50%,10%) rotateY(0deg);
-	}
-	25%{
-		transform:translate(-50%,10%) rotateY(180deg);
-		opacity: 0;
-	}
-	70%{
-		transform:translate(-50%,10%) rotateY(180deg);
 		opacity: 1;
+		transform: translate(-50%,10%) rotateY(0deg);
+	}
+	12.4%{
+		opacity: 1;
+	}
+	12.5%{
+		opacity: 0;
+		transform: translate(-50%,10%) rotateY(90deg);
+	}
+	50%{
+		opacity: 0;
+		transform: translate(-50%,10%) rotateY(180deg);
+	}
+	62.5%{
+		opacity: 0;
+		transform: translate(-50%,10%) rotateY(270deg);
+	}
+	62.6%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 1;
+		transform: translate(-50%,10%) rotateY(360deg);
 	}
 }
 
 @keyframes animei{
 	0%{
-		transform:translate(-50%,10%) rotateY(0deg);
-	}
-	25%{
-		transform:translate(-50%,10%) rotateY(180deg);
-		opacity:1;
-	}
-	70%{	
-		transform:translate(-50%,10%) rotateY(180deg);
 		opacity: 0;
+		transform: translate(-50%,10%) rotateY(180deg);
+	}
+	12.4%{
+		opacity: 0;
+	}
+	12.5%{
+		opacity: 1;
+		transform: translate(-50%,10%) rotateY(270deg);
+	}
+	50%{
+		transform: translate(-50%,10%) rotateY(360deg);
+	}
+	62.5%{
+		opacity: 1;
+	}
+	62.6%{
+		opacity: 0;
+		transform: translate(-50%,10%) rotateY(450deg);
+	}
+	100%{
+		opacity: 0;
+		transform: translate(-50%,10%) rotateY(630deg);
 	}
 }
 
