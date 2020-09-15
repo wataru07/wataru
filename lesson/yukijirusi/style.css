@@ -26,8 +26,8 @@ section#top > div.left > img{
 
 section#top > div.right > img{
 	width: 100%;
-	right: 50%;
 	height: 100%;
+	right: 50%;
 }
 
 section#top > div.mid{
@@ -42,27 +42,111 @@ section#top > div.mid{
 section#top > div.mid > div.l > img{
 	position: absolute;
     top: 0;
-    left: 50%;
+    left: 67%;
     margin: 98px 0 0 47px;
     width: 268px;
-    transform: translateX(-500px);
+/*    transform: translateX(-500px);*/
+    transform: translateY(-40px);
+    transition: all 2.5s ease;
+	opacity:0;
 }
 
 section#top > div.mid > div.r > img{
 	position: absolute;
     top: 0;
-    right: 50%;
+    right: 67%;
     margin: 98px 0 0 47px;
     width: 268px;
-    transform: translateX(500px);
+    transform: translateY(-40px);
+    transition: all 2.5s ease;
+	opacity:1;
 }
 
-section#top > div.mid > div.c > img{
+section#top > div.mid > div.l > div.lef{
+   	height: 100px
+   	margin:20px 0 0 20px;
+}
+
+section#top > div.mid > div.r > div.rig{
+   	height: 100px
+   	margin:20px 0 0 20px;
+}
+
+section#top > div.mid > div.r > div.rig > img{
+	position: absolute;
+	top: 5px;
+	left: 67%;
+	width: 270px;
+    margin: 98px 0 0 40px;
+    transform: translateY(40px);
+    transition: all 2.5s ease;
+	opacity:0;
+	z-index: -1;
+}
+
+section#top > div.mid > div.l > div.lef > img{
+	position: absolute;
+	top: 5px;
+	right: 67%;
+	width: 270px;
+    margin: 98px 0 0 40px;
+    transform: translateY(40px);
+    transition: all 2.5s ease;
+	opacity:0;
+}
+
+
+section#top > div.mid > div.c > div.c2{
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, 10%);
+	animation: anime 4s ease 0s infinite;
 }
+
+section#top > div.mid > div.c > div.c3{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 10%);
+	animation: animei 4s ease 0s infinite;
+	opacity: 0;
+	z-index: -1;
+}
+
+
+
+
+
+@keyframes anime{
+	0%{
+		transform:translate(-50%,10%) rotateY(0deg);
+	}
+	25%{
+		transform:translate(-50%,10%) rotateY(180deg);
+		opacity: 0;
+	}
+	70%{
+		transform:translate(-50%,10%) rotateY(180deg);
+		opacity: 1;
+	}
+}
+
+@keyframes animei{
+	0%{
+		transform:translate(-50%,10%) rotateY(0deg);
+	}
+	25%{
+		transform:translate(-50%,10%) rotateY(180deg);
+		opacity:1;
+	}
+	70%{	
+		transform:translate(-50%,10%) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+
 
 section#mo{
 	display: flex;
@@ -73,14 +157,28 @@ section#mo{
 
 section#mo > img{
 	height:60px; 
-	margin-left: 20px;
-	margin-right: 20px;
+	margin:0 20px;
+	opacity: 0;
+	transition: all 1s cubic-bezier(0.23, 0.6, 0.54, 0.89);
 }
 
 section#mo > div > img{
 	display: block;
 	margin: 0 auto;
+	transition: all 1.5s ease;
+	transform: translateY(-30px);
+	opacity:0;
 }
+
+section#mo > div > img:nth-of-type(1){
+	transition-delay:3.3s;
+}
+
+section#mo > div > img:nth-of-type(2){
+	transition-delay:3.5s;
+}
+
+
 
 section#t{
 	width: 100%;
@@ -147,7 +245,7 @@ section#t > div > div > div.to{
 
 
 section#t > div > div > div.to > div{
-/*	width:calc(100% - 600px);*/
+	width:calc(100% - 600px);
 	display: flex;
 	width: 70%;
 	margin-left: 0;
@@ -188,8 +286,9 @@ section#t > div > div > div.to > div > div > img:nth-of-type(4){
 
 
 section#t > div > div > div.bo{
-/*	position:relative;
-*/	background-color: #fffcd9;
+	position:relative;
+/	
+background-color: #fffcd9;
 	width: 60%;
 	padding: 80px;
 	position: relative;
@@ -209,14 +308,14 @@ section#t > div > div > div.bo > ul > li > img{
 }
 
 section#t > div > div > div.spn{
-/*	position:relative;
-*/
+	position:relative;
+
 }
 
 section#t > div > div > div.spn > img{
 	display: block;
-	/*	position:absolute;*/
-	height: 700px;
+/*	position:absolute;
+*/	height: 700px;
 	position: absolute;
 	top: 100px;
 	transform: translate(450px , -100px);
