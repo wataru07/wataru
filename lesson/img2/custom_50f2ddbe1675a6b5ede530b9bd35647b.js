@@ -1,0 +1,2 @@
+_karte_tracker = window.karte_tracker_names && window.karte_tracker_names.length > 0 ? window[window.karte_tracker_names] : window.tracker;
+_karte_tracker.trackFocusing({target_view_count:10,spend_minutes:5,frequency_threshold:5},""),_karte_tracker.trackComparing({target_view_count:10,frequency_threshold:3},""),_karte_tracker.trackTouring({target_view_count:10,spend_time:30,page_count:5},""),_karte_tracker.trackSkipping({target_view_count:10,spend_time:10,page_count:5},""),_karte_tracker.trackActionMode(),_karte_tracker.trackFlowEvents(undefined);

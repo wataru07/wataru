@@ -1,0 +1,346 @@
+@charset "UTF-8";
+
+*{
+		  padding: 0;
+		  margin:0;
+		  box-sizing:border-box;
+		}
+body{
+	font-family: "Hiragino sans", "Hiragino Kaku Gothic W3", "Hiragino Kaku Gothic Pro", Osaka, Meiryo, "MS PGothic", Verdana, sans-serif !important;
+	width: 100%;
+	padding-top:64px;
+}
+
+header{
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+
+header > div > div{
+	display: block;	
+	background-color: rgb(57, 57, 57);
+	width: 100%;
+	height: 64px;
+}
+
+header > div > div > p{
+	width: 280px;
+	height: 30px;
+	margin: 0 0 10px 80px;
+	padding-top: 15px;
+}
+
+header > div > div > ul{
+	display: flex;
+	position: absolute;
+	right: 70px;
+	top: 12px;
+	transition: all 0.5s ease 0s;
+}
+
+
+header > div > div > ul > li{
+	list-style: none;
+}
+
+header > div > div > ul > li > a{
+	color: rgb(201, 201, 201);
+	text-decoration: none;
+	margin: 20px;
+}
+
+section#ka > div > div > h1 > img{
+	width: 386px;
+    height: 184px;
+}
+
+section#ka > div{
+	 width: 100%;
+    height: 900px;
+    position: relative;	
+    background-image: url(../img2/ct_top_human.15eb94fa.png), url(../img2/ct_top_background_pc.ec774c92.png);
+    background-position: right -140px top -120px, right -510px top -80px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 900px, 1330px;
+    background-color: transparent;
+
+}
+
+section#ka > div{
+	width: 100%;
+	height: 900px;
+	margin:0 auto;
+/*		position: relative;
+*/ 
+}
+
+section#ka > div > div{
+	position: absolute;
+    top: 90px;
+    left: 80px;
+    color: rgb(51, 51, 51);
+    background-color: transparent;
+
+}
+
+section#ka > div > div > p{
+	margin-top: 20px;
+	font-size: 20px;
+    font-weight: 300;
+    width: 400px;
+    letter-spacing: 1.6px;
+
+
+
+}
+
+
+section#ka > div > div > a{
+	margin-top: 30px;
+    padding: 0.8em;
+    line-height: 1.6;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    color: rgb(255, 255, 255);
+    z-index: 10;
+    content: "";
+    background-color: rgb(249, 18, 94);
+    border-radius: 100px;
+    box-shadow: rgba(246, 28, 96, 0.5) 0px 0px 0px 5px;
+    animation: 3s ease 0s infinite normal none running mvcta;
+    transition: all 0.5s ease 0s;
+}
+
+section#ki > div > div{
+	margin-top: 100px;
+}
+
+
+section#ki > div > h2{
+	width: 100%;
+	height: 138px;
+	text-align: center;
+	font-size: 46px;
+	letter-spacing: 14px;
+	font-weight: 800;
+	color: rgb(51, 51, 51);
+}
+
+section#ki > div > div{
+	display: flex;
+	justify-content: center;
+}
+
+section#ki > div > div > div.left > img{
+	width: 375px;
+	height: 375px;
+
+
+}
+
+section#ki > div > div > div.right{
+	width: 400px;
+    margin-left: 50px;
+}
+
+section#ki > div > div > div.right > h3{
+
+	font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    line-height: 52px;
+    color: rgb(51, 51, 51);
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 75%, rgb(255, 235, 85) 75%, rgb(255, 235, 85) 100%);
+
+}
+
+section#ki > div > div > div.right > p{
+	margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 2.8px;
+}
+
+section#ku{
+	margin-top: 30px;
+	margin-bottom: 120px;
+}
+
+section#ku > div{
+	width: 100%;
+	height: 519px;
+
+}
+
+section#ku > div > div{
+	display: flex;
+	justify-content: center;
+	height: 375px;
+}
+
+
+section#ku > div > div > div.hidari{
+	width: 400px;
+    margin-left: 50px;
+}
+
+section#ku > div > div > div.hidari > h3{
+	font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    line-height: 52px;
+    color: rgb(51, 51, 51);
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 75%, rgb(255, 235, 85) 75%, rgb(255, 235, 85) 100%);
+}
+
+section#ku > div > div > div.hidari > p{
+	margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 2.8px;
+}
+
+section#ku > div > div > div.migi > img{
+	width: 375px;
+	height: 375px;
+}
+
+section#ke{
+	color: white;
+}
+
+
+section#ke > div{
+	padding: 130px 0px;
+    text-align: center;
+/*    color: rgb(255, 255, 255);
+*/    background: url(../img2/ct_message_background.c7cc0fe9.png) center center / cover no-repeat;
+}
+
+section#ke > div > h3{
+	font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 19px;
+    line-height: 90px;
+    background: transparent;
+}
+
+section#ke > div > p{
+	font-size: 18px;
+    font-weight: 700;
+    margin-top: 46px;
+    letter-spacing: 3.4px;
+    line-height: 32px;
+
+}
+
+section#ko{
+	margin: 130px auto;
+	text-align: center;
+}
+
+section#ko > div >h3{
+	font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 10.8px;
+    line-height: 30px;
+    color: rgb(51, 51, 51);
+}
+
+
+section#ko > div > a{
+	margin-top: 30px;
+    padding: 0.8em;
+    line-height: 1.6;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    color: rgb(255, 255, 255);
+    z-index: 10;
+    content: "";
+    background-color: rgb(249, 18, 94);
+    border-radius: 100px;
+    box-shadow: rgba(246, 28, 96, 0.5) 0px 0px 0px 5px;
+    animation: 3s ease 0s infinite normal none running mvcta;
+    transition: all 0.5s ease 0s;
+
+}
+
+footer > div{
+	overflow: hidden;
+	width: 100%;
+    height: 130px;
+    background: url(../img2/ct_footer_people.f486f99f.svg) center top 0px / 1340px 260px no-repeat;
+}
+
+footer > small{
+	display: block;
+    color: rgb(187, 187, 187);
+    padding: 26px;
+    background-color: rgb(57, 57, 57);
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px){
+	body{
+	font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+	width: 100%;
+
+	}
+
+	section#ki > div >h2{
+	font-size: 28px;
+    letter-spacing: 6px;
+    line-height: 54px;
+	}
+
+
+
+	section#ki > div > div{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+
+	section#ki > div > div > div.left{
+		width: 100%;
+	}
+	section#ki > div > div > div.left > img{
+		width: 100%;
+	}
+
+	section#ki > div > div > div.rigt > h3{
+		font-size: 26px;
+	    text-align: left;
+	    margin: 0px auto;
+
+	}
+
+	section#ki > div > div > div.right{
+		width: 100%;
+	}
+
+
+
+}
+
+
