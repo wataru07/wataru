@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- saved from url=(0203)https://satori.segs.jp/s?cu=https%3A%2F%2Fapollosales.co%2Flp06%2F%3Futm_source%3Dtwitter%26utm_medium%3Dcpc%26utm_campaign%3Dsaasfollower&ru=&c=342d1af6&stid=ebb1ba5e-d1f9-41ff-aede-a8c23a886f41&optout= -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!--[if IE]>
+        <script src="//satori.segs.jp/html5shiv.min.js"></script>
+        <![endif]-->
+        
+        <script type="text/javascript">
+            (function () {
+                if (!Array.prototype.some) {
+                    Array.prototype.some = function (fun /*, thisp */) {
+                        "use strict";
+
+                        if (this == null) throw new TypeError();
+
+                        var t = Object(this),
+                                len = t.length >>> 0;
+
+                        if (typeof fun != "function") throw new TypeError();
+
+                        var thisp = arguments[1];
+
+                        for (var i = 0; i < len; i++) {
+                            if (i in t && fun.call(thisp, t[i], i, t))
+                                return true;
+                        }
+
+                        return false;
+                    };
+                }
+
+                if (window.localStorage && window.postMessage && window.JSON) {
+                    var _stid = "ebb1ba5e-d1f9-41ff-aede-a8c23a886f41"
+                    window.localStorage.setItem("stid", _stid)
+                }
+		var isFirst = true
+		var messageListener = function(evt){
+                     if (isFirst === false) { return  }
+                     isFirst = false
+                     if (""+evt.data !== "SATR") { return; }
+                     var _message = '{'+
+                                         '"stSegs": {'+
+                                             '"name": "st_segs",' +
+                                             '"value": "7o8,7o9,ayx,7ob,7oc,7oe,qu2,120r,u88,az1,ayw,ayv",' +
+                                             '"expires": 730' +
+                                         '},' +
+                                         '"stId": {' +
+                                             '"name": "satori_id",' +
+                                             '"value": "ebb1ba5e-d1f9-41ff-aede-a8c23a886f41",' +
+                                             '"expires": 730' +
+                                         '}' +
+                                     '}';
+                     evt.source.postMessage(_message, "*");
+                 }
+
+                if (window.addEventListener) {
+                    window.addEventListener("message", messageListener, false);
+                } else {
+                    window.attachEvent("onmessage", messageListener);
+                }
+            }).call(this);
+</script>
+    </head>
+    <body>
+        
+    
+</body></html>

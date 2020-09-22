@@ -1,0 +1,458 @@
+@charset "UTF-8";
+
+*{
+		  padding: 0;
+		  margin:0;
+		  box-sizing:border-box;
+}
+
+body{
+	font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 17px;
+    font-weight: bold;
+    line-height: 1.5;
+    background-color: #F3F5F9;
+    color: #003CAA;
+}
+
+
+.poi{
+	max-width: 100%;
+    height: auto;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #0030A0;
+    padding: 5px 17px;
+    border-radius: 17px;
+    color: #FFFFFF;
+    font-size: 17px;
+}
+
+.text{
+	margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+
+.hsmall{
+	display: block;
+    text-align: right;
+    font-size: 70%;
+}
+
+.right{
+	margin: 50px 13px 0 0px;
+	width: 456px;
+}
+
+.left{
+	margin: 50px 0 0 77px;
+	width: 456px;
+}
+
+.imge{
+	max-width: 100%;
+    height: auto;
+}
+
+.imgu{
+	margin-left: 10px;
+}
+
+.voice{
+	background-image: url(../img3/bg-carousel.png);
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    max-width: 318px;
+    margin-right: 10px;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.mes{
+	width: 50%;
+}
+
+.formus{
+    display: block;
+    background-color: rgba(0, 42, 119, 0.75);
+    border: 0;
+    width: 100%;
+    height: 20px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: .25rem;
+    color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.cont{
+    border-radius: 32px;
+    background-color: #00D141;
+    color: #FFFFFF;
+    transition: 0.3s ease all;
+    text-decoration: none;
+    padding: 25px 60px 35px 60px;
+}
+
+h2{
+    font-family: "Raleway", sans-serif;
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-size: 67px;
+    white-space: nowrap;
+}
+
+h3{
+	font-size: 45px;
+}
+
+h4{
+	display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin: 23px 0;
+}
+
+p{
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+small{
+	display: inline;
+    font-size: 26px;
+    line-height: 1em;
+}
+
+.h2{
+	font-family: "Raleway", sans-serif;
+	margin-bottom: 30px;
+    overflow: hidden;
+    font-size: 100px;
+    line-height: 1em;
+    white-space: nowrap;
+    width: 1015px;
+    height: 118px;
+}
+
+div.header{
+	width: 100vw;
+	height: 893px;
+   	background-image: url(../img3/bg-header.png);
+   	background-position-x: center;
+	font-size: 17px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #ffffff;
+   	margin-bottom: 200px;
+}
+
+div.header > div{
+	padding:60px 80px 0 80px;
+	display: flex;
+}
+
+
+
+div.header > div > div.left{
+	width: 340px;
+	height: 55px;
+	margin-right: 76px;
+}
+
+div.header > div > div.left > a > img{
+	width: 340px;
+	height: 45px;
+}
+
+
+div.header > div > div.right{
+	width:545px;
+	height: 55px;
+}
+
+
+div.header > div > div.right > ul{
+	list-style-type: none;
+	display: flex;
+	margin: 17px 0;	
+
+}
+
+div.header > div > div.right > ul > li{
+	font-size: 14.45px;
+
+}
+
+div.header > div > div.right > ul > li > a{
+	padding:0 25px;
+	text-decoration: none;
+	color: white;
+
+}
+
+section#top{
+	margin: 0 80px;
+}
+
+
+section#top > div{
+	display: flex;
+}
+
+section#top > h2{
+	margin: 55px 0;
+	font-size: 67px;
+}
+
+section#top > div > div{
+	width: 50%;
+	margin: 17px 0;
+	position: relative;
+
+}
+
+section#top > div > div > p{
+	line-height: 2em;
+
+}
+
+section#top > div > div >p > a.cont{
+	display: block;
+	width: 330px;
+	height: 34px;
+	margin-top:10px;
+	padding: 27px 50px;
+}
+
+section#top > div > div.img{
+	max-width: 100%;
+    height: 820px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    overflow: hidden;
+}
+
+section#mid > div{
+	width: 100%;
+	padding: 0 80px;
+	color: #003CAA;
+    margin: 0 auto;
+}
+
+section#mid > div.fe{
+	margin-top: -80px;
+}
+
+
+
+section#mid > div > h2{
+	font-family: "Raleway", sans-serif;
+	margin-bottom: 30px;
+    overflow: hidden;
+    font-size: 100px;
+    line-height: 1em;
+    white-space: nowrap;
+    width: 1015px;
+    height: 118px;
+}
+
+section#mid > div > h2 >small{
+	display: inline;
+    font-size: 26px;
+    line-height: 1em;
+}
+
+section#mid > div.point > div{
+	display: flex;
+	margin-bottom: 70px;
+    width: 100%;
+}
+
+section#etc{
+	margin: 0 80px;
+}
+
+section#mid > div.etc{
+	display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+section#mid > div.etc > div{
+	padding: 0 20px;
+    flex: 1;
+}
+
+
+section#mid > div.etc > div > p{
+	font-size: 14px;
+}
+
+section#easy > div{
+	padding: 0 80px;
+	width: 100%;
+}
+
+
+
+section#easy > div > h2{
+	overflow: hidden;
+    height: 106px;
+    font-size: 101px;
+    margin-bottom: -21px;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+
+section#easy > div > h2 > small{
+	font-size: 20px;
+}
+
+section#easy > div.content{
+	background-image: url(../img3/bg-section.png);
+    background-color: #0030A0;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    padding-top: 30px;
+    color: #FFFFFF;
+    text-align: center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+}
+
+section#easy > div.content > p{
+    color: #FFFFFF;
+    text-align: center;
+    margin: 17px 0;
+}
+
+section#easy > div.content > div{
+	margin-top: 50px;
+    padding-bottom: 30px;
+    font-size: 14.45px;
+}
+section#user{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+
+section#user >h2{
+	position: relative;
+    font-size: 71px;
+    padding: 60px 80px 0 80px;
+}
+
+section#user >h2 > small{
+	position: absolute;
+    bottom: 7px;
+    right: 80px;
+    display: inline-block;
+    font-size: 34px;
+    line-height: 34px;
+    margin-left: auto;
+}
+
+section#user >div > div.bann{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+    max-width: 900px;
+    margin: 50px auto 0;
+    padding-bottom: 70px;
+}
+
+section#user >div > div.bann > div{
+	margin: 10px;
+    width: 30%;
+}
+
+section#us{
+	margin: 0 auto;
+}
+
+section#us > div > h2{
+	font-size: 110px;
+    overflow: hidden;
+    padding: 0 80px;
+}
+
+section#us > div > h2 >small{
+	display: inline;
+    font-size: 26px;
+    line-height: 1em;
+}
+
+section#us > div >div.head{
+	display: block;
+	background-image: url(../img3/bg-contact.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    margin-top: -15px;
+    height: 523px;
+}
+
+section#us > div >div.form{
+	background-image: url(../img3/bg-section.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0840A7;
+    justify-content: space-between;
+    color: #FFFFFF;
+    padding: 100px 80px;
+    display: flex;
+}
+
+section#us > div > div.form > div >p.dou{
+	 margin-top: 50px;
+    text-align: right;
+}
+
+section#us > div > div > div.toi{
+    width: 50%;
+    margin-left: 100px;
+}
+
+section#us > div > div.form > div.toi > form{
+    width: 90%;
+}
+
+section#us > div > div.form > div.toi > form >input{
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+}
+
+
+
+
+
+
+
+
+
+
+
+

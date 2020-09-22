@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://satori.segs.jp/s_inner.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!--[if IE]>
+        <script src="//satori.segs.jp/html5shiv.min.js"></script>
+        <![endif]-->
+        
+        <script type="text/javascript">
+            (function() {
+             var root = this;
+
+             var uriParse = function() {
+                 var url = location.href
+
+                 var parser = document.createElement('a'),
+                 parameters = {},
+                     queries, split, i;
+
+                 // Let the browser do the work
+                 parser.href = url;
+
+                 // Convert query string to object
+                 queries = parser.search.replace(/^\?/, '').split('&');
+                 for( i = 0; i < queries.length; i++ ) {
+                     split = queries[i].split('=');
+                     parameters[split[0]] = split[1];
+                 }
+
+                 return {
+                     protocol: parser.protocol,
+                     host: parser.host,
+                     hostname: parser.hostname,
+                     port: parser.port,
+                     pathname: parser.pathname,
+                     search: parser.search,
+                     parameters: parameters,
+                     hash: parser.hash
+                 };
+             };
+
+             var _url = uriParse();
+             var _pd   = _url.protocol+"//"+_url.host;
+             var isFirst = true
+             window.addEventListener("message", function(evt){
+
+                 if(isFirst === false) return;
+                 isFirst = false
+
+                 var _stid = "", _optout = "";
+                 if (root.localStorage) {
+                     _stid = root.localStorage.getItem("stid");
+                     if (_stid === null || typeof _stid === "undefined" || _stid === "undefined") { _stid=""; }
+                     _optout  = root.localStorage.getItem("optout");
+                     if (_optout === null || typeof _optout === "undefined" || _optout === "undefined") { _optout=""; }
+                 }
+                 evt.source.postMessage('{"optout":"' + _optout +'", "stid":"'+_stid +'"}', "*");
+             });
+             }).call(this);
+        </script>
+     </head>
+     <body>
+     
+ 
+</body></html>
