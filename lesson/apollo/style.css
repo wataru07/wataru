@@ -48,7 +48,7 @@ main{
     line-height: 23px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-}}
+    margin-top: 
 }
 
 .hsmall{
@@ -168,21 +168,11 @@ h3{
 
 h4{
 	display: block;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     font-weight: bold;
     margin: 23px 0;
 }
 
-p{
-	display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
+
 
 small{
 	display: inline;
@@ -439,8 +429,12 @@ section#user >div{
 }
 
 section#user > div > div.slider{
-    display: flex;
+    display: inline-flex;
     width: 100%;
+}
+
+section#user > div > div.slider > div{
+    box-sizing: content-box;
 }
 
 section#user > div > div.slider > div.voice{
@@ -460,10 +454,11 @@ section#user > div > div.slider > div.voice > div{
 }
 
 section#user > div > div.slider > div.voice > p{
-    position: absolute;
     display: block;
     margin-top: 30px;
     text-align: right;
+    font-size: 14.45px;
+
 } 
 
 section#user >div > div.bann{
