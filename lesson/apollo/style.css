@@ -390,6 +390,7 @@ section#easy > div.content{
     position: relative;
     z-index: 0;
     width: 100%;
+
 }
 
 section#easy > div.content > p{
@@ -398,11 +399,20 @@ section#easy > div.content > p{
     margin: 17px 0;
 }
 
-section#easy > div.content > div{
-	margin-top: 50px;
+section#easy > div.content > div#use{
+    width: 100%;
+    margin-top: 50px;
     padding-bottom: 30px;
     font-size: 14.45px;
 }
+
+section#easy > div.content > div#use > img{
+    display: block;
+    max-width: 100%;
+    margin:0 auto;
+
+}
+
 section#user{
 	display: block;
 	width: 100%;
@@ -428,21 +438,21 @@ section#user >div{
     width: 100%;
 }
 
-section#user > div > div.slider{
-    display: inline-flex;
+.part_slider{
+    display: inline-flex !important;
     width: 100%;
 }
 
-section#user > div > div.slider > div{
+.part_slider > div{
     box-sizing: content-box;
 }
 
-section#user > div > div.slider > div.voice{
+.part_slider > div.voice{
     width: 100%;
     position: relative;
 }
 
-section#user > div > div.slider > div.voice > div{
+.part_slider > div.voice > div{
     top: 0;
     left: 0;
     border-top: 2px solid #FFFFFF;
@@ -453,15 +463,14 @@ section#user > div > div.slider > div.voice > div{
     border-right: 2px solid #FFFFFF;
 }
 
-section#user > div > div.slider > div.voice > p{
+.part_slider > div.voice > p{
     display: block;
     margin-top: 30px;
     text-align: right;
     font-size: 14.45px;
+}
 
-} 
-
-section#user >div > div.bann{
+section#user > div.bann{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -470,7 +479,7 @@ section#user >div > div.bann{
     padding-bottom: 70px;
 }
 
-section#user >div > div.bann > div{
+section#user > div.bann > div{
 	margin: 10px;
     width: 30%;
 }
