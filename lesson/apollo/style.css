@@ -438,6 +438,10 @@ section#user >div{
     width: 100%;
 }
 
+.slick-slide img {
+    margin: 0 auto;
+}
+
 .part_slider{
     display: inline-flex !important;
     width: 100%;
