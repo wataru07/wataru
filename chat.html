@@ -33,7 +33,7 @@
   var methods = {
     init : function( options ) {
       settings = $.extend({
-        'uri'   : 'ws://localhost:8080',
+        'uri'   : 'ws://localhost:8080/room1/',
         'conn'  : null,
         'message' : '#message',
         'display' : '#display'
@@ -47,7 +47,7 @@
         var message = $(settings['message']).val();
         if (message && settings['conn']) {
           settings['conn'].send(message + '');
-          $(this).chat('drawText',message,'right');
+          $(this).chat('drawText',message,'left');
           $(settings['message']).val('');
         }
       }
